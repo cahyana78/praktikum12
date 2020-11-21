@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class TestTP01 {
 
     private static final String[] INPUT = {
-            "2\n1 2\3 4",
+            "2\n1 2\n3 4",
 			"3\n1 2 3\n4 5 6\n7 8 9"
     };
     private static final String[] OUTPUT = {
