@@ -1,27 +1,23 @@
-package org.d3ifcool.ima10;
-
-import org.junit.jupiter.api.Test;
-
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
-import java.io.PrintStream;
+package org.d3ifcool.ima12;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class TestTP03 {
+import org.junit.jupiter.api.Test;
+
+import java.io.*;
+
+public class TestJurnal02 {
 
     private static final String[] INPUT = {
-            "5",
-			"3"
+            "3\n1 0 0\n1 2 2\n0 0 1",
+			"3\n1 0 0\n1 2 2\n1 0 0"
     };
     private static final String[] OUTPUT = {
-            "    *\n   **\n  ***\n ****\n*****",
-			"  *\n **\n***"
-    };
+            "?","O"
+	};
 
     @Test
-    public void testTP() {
+    public void testJurnal() {
         InputStream originalIn = System.in;
         PrintStream originalOut = System.out;
 
@@ -30,7 +26,7 @@ public class TestTP03 {
             ByteArrayOutputStream bos = new ByteArrayOutputStream();
             System.setOut(new PrintStream(bos));
 
-            TP03.main(null);
+            Jurnal02.main(null);
 
             assertEquals(OUTPUT[i] + "\n", bos.toString());
         }

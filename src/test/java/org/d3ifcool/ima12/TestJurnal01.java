@@ -1,4 +1,4 @@
-package org.d3ifcool.ima10;
+package org.d3ifcool.ima12;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -6,15 +6,17 @@ import org.junit.jupiter.api.Test;
 
 import java.io.*;
 
-public class TestJurnal03 {
+public class TestJurnal01 {
 
     private static final String[] INPUT = {
-        "5","7"
+            "2\n1 2\n3 4",
+			"3\n1 2 3\n4 5 6\n7 8 9"
     };
-    private static final String[] OUTPUT = {
-        "0\n12\n345\n6789\n01234",
-		"0\n12\n345\n6789\n01234\n567890\n1234567"
-	};
+	
+	private static final String[] OUTPUT = {
+            "3 4\n1 2",
+			"7 8 9\n4 5 6\n1 2 3"
+    };
 
     @Test
     public void testJurnal() {
@@ -26,12 +28,13 @@ public class TestJurnal03 {
             ByteArrayOutputStream bos = new ByteArrayOutputStream();
             System.setOut(new PrintStream(bos));
 
-            Jurnal03.main(null);
+            Jurnal01.main(null);
 
             assertEquals(OUTPUT[i] + "\n", bos.toString());
         }
 
         System.setOut(originalOut);
         System.setIn(originalIn);
+
     }
 }

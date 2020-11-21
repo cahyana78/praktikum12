@@ -1,4 +1,4 @@
-package org.d3ifcool.ima10;
+package org.d3ifcool.ima12;
 
 import org.junit.jupiter.api.Test;
 
@@ -9,15 +9,14 @@ import java.io.PrintStream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class TestTP01 {
+public class TestTP02 {
 
     private static final String[] INPUT = {
-            "2",
-			"9"
+            "3\n1 2 3\n4 5 6\n7 8 9\n10 11 12\n13 14 15\n16 17 18"
     };
+	
     private static final String[] OUTPUT = {
-            "1 x 2 = 2\n2 x 2 = 4\n3 x 2 = 6\n4 x 2 = 8\n5 x 2 = 10\n6 x 2 = 12\n7 x 2 = 14\n8 x 2 = 16\n9 x 2 = 18\n10 x 2 = 20",
-			"1 x 9 = 9\n2 x 9 = 18\n3 x 9 = 27\n4 x 9 = 36\n5 x 9 = 45\n6 x 9 = 54\n7 x 9 = 63\n8 x 9 = 72\n9 x 9 = 81\n10 x 9 = 90"
+            "11 13 15\n17 19 21\n23 25 27"
     };
 
     @Test
@@ -30,7 +29,7 @@ public class TestTP01 {
             ByteArrayOutputStream bos = new ByteArrayOutputStream();
             System.setOut(new PrintStream(bos));
 
-            TP01.main(null);
+            TP02.main(null);
 
             assertEquals(OUTPUT[i] + "\n", bos.toString());
         }
