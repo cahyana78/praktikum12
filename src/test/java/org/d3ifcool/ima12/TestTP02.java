@@ -16,7 +16,7 @@ public class TestTP02 {
     };
 	
     private static final String[] OUTPUT = {
-            "11 13 15\n17 19 21\n23 25 27"
+            "11 13 15 \n17 19 21 \n23 25 27 "
     };
 
     @Test

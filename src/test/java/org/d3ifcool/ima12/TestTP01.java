@@ -16,8 +16,8 @@ public class TestTP01 {
 			"3\n1 2 3\n4 5 6\n7 8 9"
     };
     private static final String[] OUTPUT = {
-            "2 1\n4 3",
-			"3 2 1\n6 5 4\n9 8 7"
+            "2 1 \n4 3 ",
+			"3 2 1 \n6 5 4 \n9 8 7 "
     };
 
     @Test

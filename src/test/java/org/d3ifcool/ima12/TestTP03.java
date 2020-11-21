@@ -16,7 +16,7 @@ public class TestTP03 {
 			
     };
     private static final String[] OUTPUT = {
-            "144 150 156\n351 366 381\n558 582 606"
+            "144 150 156 \n351 366 381 \n558 582 606 "
 			
     };
 

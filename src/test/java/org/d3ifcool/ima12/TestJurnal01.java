@@ -14,8 +14,8 @@ public class TestJurnal01 {
     };
 	
 	private static final String[] OUTPUT = {
-            "3 4\n1 2",
-			"7 8 9\n4 5 6\n1 2 3"
+            "3 4 \n1 2 ",
+			"7 8 9 \n4 5 6 \n1 2 3 "
     };
 
     @Test

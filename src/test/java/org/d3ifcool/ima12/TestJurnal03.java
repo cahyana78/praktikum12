@@ -12,7 +12,7 @@ public class TestJurnal03 {
         "5"
     };
     private static final String[] OUTPUT = {
-        "1 16 15 14 13\n2 17 24 23 12\n3 18 25 22 11\n4 19 20 21 10\n5 6 7 8 9"
+        "1 16 15 14 13 \n2 17 24 23 12 \n3 18 25 22 11 \n4 19 20 21 10 \n5 6 7 8 9 "
 	};
 
     @Test
